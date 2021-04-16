@@ -1,0 +1,270 @@
+.sticky {
+    background-color: #f4f9ff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #f4f9ff;
+    font-size: 24px;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sticky .logo {
+    color: #1e1f22;
+}
+
+.sticky ul li a {
+    color: #1e1f22;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: #1e1f22;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: #f4f9ff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 3em;
+    color: #f4f9ff;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: #3692fa;
+    display: inline-block;
+    color: #f4f9ff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e1f22;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx {
+    padding-right: 30px;
+}
+
+.contentBx h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50 {
+    min-width: 50%;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.projects {
+    background: #1e1f22;
+}
+
+.heading.white {
+    color: #f4f9ff;
+}
+
+.projects .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.projects .content .projectBx {
+    padding: 40px 20px;
+    background: rgba(54, 146, 250, 0.4);
+    color: #f4f9ff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.projects .content .projectBx:hover {
+    background-color: rgb(54, 146, 250);
+}
+
+.projects .content .projectBx h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact {
+    background: #2c3446;
+}
+
+.contact .heading {
+    color: #f4f9ff;
+}
+
+.contact .content {
+    justify-content: space-around;
+    text-align: center;
+    color: #f4f9ff;
+}
+
+.footer {
+    padding: 10px 0;
+    background: #1e1f22;
+    color: #f4f9ff;
+    text-align: center;
+}
+
+/* * Responsive */
+
+@media (max-width: 990px) {
+    .sticky {
+        padding: 40px 40px;
+        z-index: 1000;
+    }
+
+    .menu {
+        position: fixed;
+        top: 116.8px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #f4f9ff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .menu.active {
+        left: 0%;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url("../public/menu.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active {
+        background: url("../public/close.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .sticky .toggle {
+        filter: invert(1);
+    }
+
+    .banner {
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+
+    .banner h3 {
+        font-size: 1em;
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heading h2 {
+        font-size: 24px;
+    }
+
+    .contentBx h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .contentBx p h4 {
+        margin-bottom: 10px;
+    }
+
+    .w50 {
+        margin-bottom: 20px;
+    }
+
+    .projects .content .projectBx {
+        background: rgba(54, 146, 250, 0.7);
+        margin: 10px;
+    }
+
+    .contact .content .social {
+        margin-bottom: 20px;
+    }
+
+    .contact .content .social h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .sticky {
+        padding: 20px 20px;
+    }
+
+    .menu {
+        top: 80px;
+    }
+
+    .banner {
+        padding: 150px 20px 100px;
+    }
+}
